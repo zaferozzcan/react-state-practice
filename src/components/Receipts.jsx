@@ -54,7 +54,7 @@ export default class Receipts extends React.Component {
     return (
       <div className="meal-container">
         {this.state.receipts.map((item) => {
-          return (
+          return item.paid === false ? (
             <div className="meals">
               <h1>{item.person}</h1>
               <p>
@@ -82,7 +82,7 @@ export default class Receipts extends React.Component {
                 {item.order.cost}
               </p>
             </div>
-          );
+          ) : null;
         })}
       </div>
     );
