@@ -1,0 +1,13 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.meal-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.meals {
+  border: 1px solid black;
+}
